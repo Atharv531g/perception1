@@ -1,0 +1,51 @@
+/* Content styles for AccessAI extension */
+
+/* Highlight styles for read-aloud feature */
+.accessai-highlight {
+  background-color: rgba(255, 235, 59, 0.4) !important;
+  transition: background-color 0.3s ease !important;
+}
+
+/* Simplified text container */
+.accessai-simplified {
+  background: white;
+  border: 2px solid #0891b2;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* AI-generated alt text overlay */
+.accessai-alt-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Cursor guide for motor assistance */
+.accessai-cursor-guide {
+  position: fixed;
+  pointer-events: none;
+  border: 3px solid #0891b2;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+  z-index: 999999;
+}
+
+/* Focus indicator for keyboard navigation */
+*:focus {
+  outline: 3px solid #0891b2 !important;
+  outline-offset: 2px !important;
+}
